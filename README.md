@@ -1,6 +1,6 @@
 # ESP32S3-Mini-U1-DevBoard
 ##Description: <br>
-A simple ESP32S3MiniU1 Devboard designed by JLCEDA std.
+A simple ESP32S3MiniU1 Devboard designed by JLCEDA std.<br>
 Repository URL: https://github.com/ClemenzC/ESP32S3-Mini-U1
 
 ## Features:<br>
