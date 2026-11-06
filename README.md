@@ -1,6 +1,7 @@
 # ESP32S3-Mini-U1-DevBoard
 ##Description: <br>
 A simple ESP32S3MiniU1 Devboard designed by JLCEDA std.
+Repository URL: https://github.com/ClemenzC/ESP32S3-Mini-U1
 
 ## Features:<br>
 - Multiple Burning Modes Supported
@@ -16,7 +17,7 @@ A simple ESP32S3MiniU1 Devboard designed by JLCEDA std.
 
 ## Debug:<br>
 ### Boot:<br>
-* Note: the status of GPIO0 will be locked after reset or power-up then it could be used as normal IO.*
+*Note: the status of GPIO0 will be locked after reset or power-up then it could be used as normal IO.*
 - Lauch(Normal)<br>
   GPIO0(BOOT) has to be held high(internally pulled up by default; floating means high).
 - Download Mode(waiting for burning):<br>
@@ -28,7 +29,7 @@ A simple ESP32S3MiniU1 Devboard designed by JLCEDA std.
   After power is applied, wait for the supply to stabilize (approximately 50 μs). EN must be pulled high to activate the chip.
   
 ### Built-in & External JTAG:<br>
-* Note: Built-in JTAG vs. external JTAG.*
+*Note: Built-in JTAG vs. external JTAG.*
 
 It should be noted that the ESP32-S3 has an integrated JTAG circuit. By default, the chip's JTAG interface is connected to the built-in USB_SERIAL_JTAG peripheral, so you only need to connect GPIO19 (D-) and GPIO20 (D+) via a USB cable to perform debugging; the aforementioned GPIO39–42 are not required.
 Only when using an external JTAG debugger (such as ESP-Prog) do you need to connect the debugger's TMS/TDO/TDI/TCK to the chip's GPIO42/40/41/39 respectively. In addition, to enable this group of GPIOs as the JTAG interface, you usually also need to disable the built-in USB JTAG function by configuring eFuse (for example, burning DIS_USB_JTAG).
