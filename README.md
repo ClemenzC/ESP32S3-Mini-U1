@@ -38,3 +38,4 @@ Boot:<br>
 |High (during normal operation)|Any|Only pulling RST low during operation triggers a reset; changing BOOT alone has no effect|N/A|
 |Low → High (reset released)|Low, and GPIO46 is High|May fail to enter download mode (S3 requires GPIO46 to be Low or floating)|Troubleshooting download failures|Boot failure, may repeatedly reboot or enter ROM to wait
 |Low → High (reset released)|High, but Flash has no valid firmware|N/A|
+|---------------|-----------------------------------|-------------|-----------|
