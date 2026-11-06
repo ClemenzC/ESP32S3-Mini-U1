@@ -16,13 +16,13 @@ A simple ESP32S3MiniU1 Devboard designed by JLCEDA std.
 
 ## Debug:<br>
 ### Boot:<br>
-*!Notice: The status of GPIO0 will be locked after reset or power-up then it could be used as normal IO.*
+* *Notice: The status of GPIO0 will be locked after reset or power-up then it could be used as normal IO.*
 - Lauch(Normal)<br>
   GPIO0(BOOT) has to be held high(internally pulled up by default; floating means high).
 - Download Mode(waiting for burning):<br>
   GPIO0 must be pulled low during reset. Note that because it has an internal weak pull-up of about 45 kΩ, an external   button to ground needs a strong enough pull-down (e.g., a 10 kΩ resistor or a direct short) to reliably pull it low.
 ### Reset:<br>
-  Pull EN low and hold it for at least 50 μs, then release it; the chip will reboot.
+- Pull EN low and hold it for at least 50 μs, then release it; the chip will reboot.
 - Power-up sequence:
   After power is applied, wait for the supply to stabilize (approximately 50 μs). EN must be pulled high to activate the chip.
 
