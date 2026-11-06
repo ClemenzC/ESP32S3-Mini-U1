@@ -18,7 +18,7 @@ Repository URL: https://github.com/ClemenzC/ESP32S3-Mini-U1
 ## Debug:<br>
 ### Boot:<br>
 *Note: the status of GPIO0 will be locked after reset or power-up then it could be used as normal IO.*
-- Lauch(Normal)<br>
+- Launch(Normal)<br>
   GPIO0(BOOT) has to be held high(internally pulled up by default; floating means high).
 - Download Mode(waiting for burning):<br>
   GPIO0 must be pulled low during reset. Note that because it has an internal weak pull-up of about 45 kΩ, an external   button to ground needs a strong enough pull-down (e.g., a 10 kΩ resistor or a direct short) to reliably pull it low.
