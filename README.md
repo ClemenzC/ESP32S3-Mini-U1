@@ -12,11 +12,11 @@ A simple ESP32S3MiniU1 Devboard designed by JLCEDA std.
 
 ## Document:<br>
 - References:<br>
-  See *[TechManual](https://item.szlcsc.com/datasheet/ESP32-S3-MINI-1U-N8/3401551.html)* for ESP32S3MiniU1.
+  See *[techmanual](https://item.szlcsc.com/datasheet/ESP32-S3-MINI-1U-N8/3401551.html)* for ESP32S3MiniU1.
 
 ## Debug:<br>
 ### Boot:<br>
-* *Notice: The status of GPIO0 will be locked after reset or power-up then it could be used as normal IO.*
+* Notice: the status of GPIO0 will be locked after reset or power-up then it could be used as normal IO.*
 - Lauch(Normal)<br>
   GPIO0(BOOT) has to be held high(internally pulled up by default; floating means high).
 - Download Mode(waiting for burning):<br>
